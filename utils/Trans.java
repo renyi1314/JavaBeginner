@@ -1,0 +1,5 @@
+class Trans {
+    void Trans() {
+
+    }
+}
