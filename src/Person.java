@@ -1,8 +1,9 @@
 public class Person {
+    private static Person instance;
     private String name;
     private int age;
 
-    Person(String name) {
+    private Person(String name) {
         this.name = name;
     }
 
@@ -16,9 +17,13 @@ public class Person {
         System.out.println("my age is " + age);
     }
 
+    static Person getInstance(String name) {
+        if (instance == null) {
+            instance = new Person(name);
+        }
+        return instance;
+    }
+
     public static void main(String[] args) {
-        Person renyi = new Person("renyi");
-        renyi.setAge(30);
-        renyi.speak();
     }
 }
