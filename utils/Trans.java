@@ -1,5 +1,4 @@
 class Trans {
-    void Trans() {
-
+    void trans() {
     }
 }
