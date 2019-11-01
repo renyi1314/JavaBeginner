@@ -6,5 +6,7 @@ class forLoop {
             ch++;
             System.out.println(ch);
         }
+        int numbes[]={1,2,3,4,5};
+        
     }
 }
